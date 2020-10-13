@@ -1,0 +1,11 @@
+.a-img{
+    background-image: url('./images/bb.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 7rem;
+    height: 4rem;
+}
+.navbar-brand{
+    margin-left: 2rem;
+}
