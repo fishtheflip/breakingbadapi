@@ -173,47 +173,38 @@ export default class CardContainer extends React.Component{
                 <div className="card bg-secondary mb-3" > 
                     <div className="card-header">{name}</div>
                     <div className="card-body">
-                        
                         <img className="img" src={image}></img>
                         <p className="card-text">Status: {status}</p>
-                    
                     </div>
                 </div>
 
                 <div className="card bg-secondary mb-3" > 
                     <div className="card-header">{name2}</div>
                     <div className="card-body">
-                        
                         <img className="img" src={image2}></img>
-                        <p className="card-text">Status: {status2}</p>
-                        
+                        <p className="card-text">Status: {status2}</p>    
                     </div>
                 </div>
 
                 <div className="card bg-secondary mb-3" > 
                     <div className="card-header">{name3}</div>
                     <div className="card-body">
-                        
                         <img className="img" src={image3}></img>
-                        <p className="card-text">Status: {status3}</p>
-                        
+                        <p className="card-text">Status: {status3}</p>    
                     </div>
                 </div>
 
                 <div className="card bg-secondary mb-3" > 
                     <div className="card-header">{name4}</div>
                     <div className="card-body">
-                        
                         <img className="img" src={image4}></img>
-                        <p className="card-text">Status: {status4}</p>
-                        
+                        <p className="card-text">Status: {status4}</p>    
                     </div>
                 </div>
 
                 <div className="card bg-secondary mb-3" > 
                     <div className="card-header">{name5}</div>
-                    <div className="card-body">
-                        
+                    <div className="card-body">   
                         <img className="img"  src={image5} ></img>
                         <p className="card-text">Status: {status5}</p>
                        
