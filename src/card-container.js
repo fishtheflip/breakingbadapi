@@ -1,6 +1,7 @@
 import React from 'react';
 import './card-container.css'
 import ServiceApi from './service-api';
+import Card from './card';
 
 export default class CardContainer extends React.Component{
     
@@ -104,7 +105,6 @@ export default class CardContainer extends React.Component{
         this.setState({
                 arr: [1,2,3,4,5]
         })
-        console.log("hi");
         
         await this.updateClient();
         await this.updateField();
@@ -115,7 +115,6 @@ export default class CardContainer extends React.Component{
         this.setState({
                 arr: [6,7,8,9,10]
         })
-        console.log("hi");
         
         await this.updateClient();
         await this.updateField();
@@ -126,7 +125,6 @@ export default class CardContainer extends React.Component{
         this.setState({
                 arr: [11,12,13,14,15]
         })
-        console.log("hi");
         
         await this.updateClient();
         await this.updateField();
@@ -137,7 +135,6 @@ export default class CardContainer extends React.Component{
         this.setState({
                 arr: [16,17,18,19,20]
         })
-        console.log("hi");
         
         await this.updateClient();
         await this.updateField();
@@ -148,7 +145,6 @@ export default class CardContainer extends React.Component{
         this.setState({
                 arr: [21,22,23,24,25]
         })
-        console.log("hi");
         
         await this.updateClient();
         await this.updateField();
@@ -168,48 +164,15 @@ export default class CardContainer extends React.Component{
     
     return(
         <div>
-        <div className="card-field container-fluid ">
+        <div className="card-field container-fluid">
                 
-                <div className="card bg-secondary mb-3" > 
-                    <div className="card-header">{name}</div>
-                    <div className="card-body">
-                        <img className="img" src={image}></img>
-                        <p className="card-text">Status: {status}</p>
-                    </div>
-                </div>
+                <Card name={name} image={image} status={status}/>
+                <Card name={name2} image={image2} status={status2}/>
+                <Card name={name3} image={image3} status={status3}/>
+                <Card name={name4} image={image4} status={status4}/>
+                <Card name={name5} image={image5} status={status5}/>
 
-                <div className="card bg-secondary mb-3" > 
-                    <div className="card-header">{name2}</div>
-                    <div className="card-body">
-                        <img className="img" src={image2}></img>
-                        <p className="card-text">Status: {status2}</p>    
-                    </div>
-                </div>
 
-                <div className="card bg-secondary mb-3" > 
-                    <div className="card-header">{name3}</div>
-                    <div className="card-body">
-                        <img className="img" src={image3}></img>
-                        <p className="card-text">Status: {status3}</p>    
-                    </div>
-                </div>
-
-                <div className="card bg-secondary mb-3" > 
-                    <div className="card-header">{name4}</div>
-                    <div className="card-body">
-                        <img className="img" src={image4}></img>
-                        <p className="card-text">Status: {status4}</p>    
-                    </div>
-                </div>
-
-                <div className="card bg-secondary mb-3" > 
-                    <div className="card-header">{name5}</div>
-                    <div className="card-body">   
-                        <img className="img"  src={image5} ></img>
-                        <p className="card-text">Status: {status5}</p>
-                       
-                    </div>
-                </div>
                 </div>
                 <div>
                             <div className="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
